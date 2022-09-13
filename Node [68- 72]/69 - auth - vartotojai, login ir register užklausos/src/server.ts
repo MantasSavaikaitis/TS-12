@@ -1,5 +1,8 @@
 import express from 'express';
+import morgan from 'morgan';
+import cors from 'cors';
 import config from './config';
+import authRouter from './routers/auth-router';
 // import database from './services/database';
 
 // TODO: Initiale first connection before lounching server
@@ -12,8 +15,11 @@ try {
 
   // Middlewares
   server.use(express.json());
+  server.use(morgan('tiny'));
+  server.use(cors());
 
   // Routes
+  server.use('/api/auth', authRouter);
 
   server.listen(config.server.port, () => {
     console.log(`Server ir running on ${config.server.url}`);
