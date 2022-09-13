@@ -1,6 +1,4 @@
-import mysql from 'mysql2';
-import config from './config';
+import mysql from 'mysql2/promise';
+import config from './config/index.js';
 
-const connection = mysql.createConnection(config.database);
-
-console.log(connection);
+const connection = await mysql.createConnection(config.database);
