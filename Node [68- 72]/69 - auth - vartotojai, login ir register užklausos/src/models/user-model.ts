@@ -5,9 +5,9 @@ import database, { escape, isQueryError } from '../services/database';
 const findUserByEmail = async (email: string): Promise<User | null> => {
   try {
     const queryResult = await database.execute(`
-    SELECT *
-    FROM users
-    WHERE email = ${escape(email)};
+      SELECT *
+      FROM users
+      WHERE email = ${escape(email)};
     `);
 
     return queryResult as unknown as User;
