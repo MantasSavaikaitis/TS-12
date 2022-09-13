@@ -42,6 +42,7 @@ const server = {
   protocol: SERVER_PROTOCOL,
   domain: SERVER_DOMAIN,
   port: SERVER_PORT,
+  url: `${SERVER_PROTOCOL}://${SERVER_DOMAIN}:${SERVER_PORT}`,
 };
 
 const database = {
