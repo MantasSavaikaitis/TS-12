@@ -1,6 +1,6 @@
-import { printBlue } from "./helpers";
+import { printBlue } from "./helpers.js";
 
 const words: string[] = ['I\m', 'blue', 'dabudy', 'dabudaj'];
 
-words.forEach(printBlue)
+words.forEach(printBlue);
 
