@@ -1,5 +1,10 @@
 import { printBlue } from './helpers.js';
 
-const words: string[] = ['I\'m', 'blue', 'dabudy', 'dabudaj'];
+const words = ['I\'m', 'blue', 'dabudy', 'dabudaj'];
 
 words.forEach(printBlue);
+
+const studentsIdetificationKeys: (number | string)[] = [];
+
+studentsIdetificationKeys.push(7);
+studentsIdetificationKeys.push('9');
