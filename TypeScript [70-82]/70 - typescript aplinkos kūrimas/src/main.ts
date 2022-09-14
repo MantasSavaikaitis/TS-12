@@ -6,7 +6,7 @@ type Item = {
 type Person = {
   name: string,
   age: number,
-  married: boolean,
+  status: string,
 };
 
 const firstName = 'Serbentautas';
@@ -29,7 +29,7 @@ const items: Item[] = [
 const person: Person = {
   name: 'Serbentautas',
   age: 22,
-  married: false,
+  status: 'married',
 };
 
 const friends: Person[] = [
@@ -37,12 +37,12 @@ const friends: Person[] = [
   {
     name: 'Jully',
     age: 32,
-    married: true,
+    status: 'divorced',
   },
   {
     name: 'Martin',
     age: 36,
-    married: false,
+    status: 'Single parent',
   },
 ];
 
