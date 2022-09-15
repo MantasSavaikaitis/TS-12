@@ -21,5 +21,3 @@ console.log({
   replacedString,
   avgNumbers,
 });
-
-export { };
