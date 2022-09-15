@@ -63,7 +63,7 @@ console.groupCollapsed('1. Sukurkite funkciją, kuri atspausdiną tekstą didži
 console.groupEnd();
 
 // 5 min
-console.group('2. Sukurkite funkciją, kuri grąžina pirmo ir antro parametro bendrą simbolių skaičių');
+console.groupCollapsed('2. Sukurkite funkciją, kuri grąžina pirmo ir antro parametro bendrą simbolių skaičių');
 {
   const calcCombinedLength = (a: string, b: string): number => a.length + b.length;
 
@@ -76,9 +76,15 @@ console.group('2. Sukurkite funkciją, kuri grąžina pirmo ir antro parametro b
 console.groupEnd();
 
 // 7 min
-console.groupCollapsed('3. Sukurkite funkciją, kuri grąžina <true>, jeigu žodyje yra 2 parametru perduoda raidė, priešingu atveju false');
+console.group('3. Sukurkite funkciją, kuri grąžina <true>, jeigu žodyje yra 2 parametru perduoda raidė, priešingu atveju false');
 {
+  const containsLetter = (str: string, letter: string): boolean => str.includes(letter);
 
+  console.table({
+    'labas, a': containsLetter('labas', 'a'),
+    'kempė, a': containsLetter('kempė', 'a'),
+    'Finakolė, u': containsLetter('Finakolė', 'u'),
+  });
 }
 console.groupEnd();
 
