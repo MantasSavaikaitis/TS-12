@@ -9,7 +9,7 @@
 
   * Klauskite dėstytojo užduoties paaiškinimo, jeigu užduotis nėra aiški.
 
-  * Galvoje susidarytkite sprendimo planą:
+  * Galvoje susidarykite sprendimo planą:
     * Kaip atliksiu užduotį? Galbūt verta pasibraižyti sprendimo idėją ant lapelio?
     * Kokių tipų reikės? Parametrų tipai, rezultatų tipai, funkcijų tipai.
     * Kaip aiškiai ir tvarkingai pateiksiu rezultatus?
@@ -48,14 +48,30 @@
 // 10 min
 console.groupCollapsed('1. Sukurkite funkciją, kuri atspausdiną tekstą didžiosiomis raidėmis');
 {
+  const printCapitalized = (str: string): void => {
+    const wordCapitalized = str.toUpperCase();
+    console.log(wordCapitalized);
+  };
 
+  console.log('printCapitalized("abcd"):');
+  printCapitalized('abcd');
+  console.log('printCapitalized("AAAA"):');
+  printCapitalized('AAAA');
+  console.log('printCapitalized("aBcD"):');
+  printCapitalized('aBcD');
 }
 console.groupEnd();
 
-// 10 min
-console.groupCollapsed('2. Sukurkite funkciją, kuri grąžina pirmo ir antro parametro bendrą simbolių skaičių');
+// 5 min
+console.group('2. Sukurkite funkciją, kuri grąžina pirmo ir antro parametro bendrą simbolių skaičių');
 {
+  const calcCombinedLength = (a: string, b: string): number => a.length + b.length;
 
+  console.table({
+    'calcCombinedLength("labas", "abc")': calcCombinedLength('labas', 'abc'),
+    'calcCombinedLength("kranas", "jonas")': calcCombinedLength('kranas', 'jonas'),
+    'calcCombinedLength("kebabas", "kefyras")': calcCombinedLength('kebabas', 'kefyras'),
+  });
 }
 console.groupEnd();
 
