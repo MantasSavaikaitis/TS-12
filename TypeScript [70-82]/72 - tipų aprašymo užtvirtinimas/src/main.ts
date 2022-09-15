@@ -45,7 +45,7 @@
 
 */
 
-// 10 min
+// 5 min
 console.groupCollapsed('1. Sukurkite funkciją, kuri atspausdiną tekstą didžiosiomis raidėmis');
 {
   const printCapitalized = (str: string): void => {
@@ -75,14 +75,14 @@ console.group('2. Sukurkite funkciją, kuri grąžina pirmo ir antro parametro b
 }
 console.groupEnd();
 
-// 10 min
+// 7 min
 console.groupCollapsed('3. Sukurkite funkciją, kuri grąžina <true>, jeigu žodyje yra 2 parametru perduoda raidė, priešingu atveju false');
 {
 
 }
 console.groupEnd();
 
-// 10 min
+// 5 min
 console.groupCollapsed('4. Sukurkite funkciją, kuri grąžina <true>, jeigu žodyje yra lyginis skaičius simbolių');
 {
 
@@ -96,7 +96,7 @@ console.groupCollapsed('5. Sukurkite funkciją, kuri grąžina balsių kiekį ž
 }
 console.groupEnd();
 
-// 15 min
+// 10 min
 console.groupCollapsed('6. Sukurkite funkciją, kuri grąžina bet kokios raidės kiekį žodyje');
 {
 

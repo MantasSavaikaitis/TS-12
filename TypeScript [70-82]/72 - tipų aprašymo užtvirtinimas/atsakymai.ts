@@ -44,7 +44,7 @@
 
 */
 
-// 10 min
+// 5 min
 console.groupCollapsed('1. Sukurkite funkciją, kuri atspausdiną tekstą didžiosiomis raidėmis');
 {
   // Funkcijos deklaravimas
@@ -62,7 +62,7 @@ console.groupCollapsed('1. Sukurkite funkciją, kuri atspausdiną tekstą didži
 }
 console.groupEnd();
 
-// 10 min
+// 5 min
 console.groupCollapsed('2. Sukurkite funkciją, kuri grąžina pirmo ir antro parametro bendrą simbolių skaičių');
 {
   const caclStringCombinedLength = (a: string, b: string): number => a.length + b.length;
@@ -75,7 +75,7 @@ console.groupCollapsed('2. Sukurkite funkciją, kuri grąžina pirmo ir antro pa
 }
 console.groupEnd();
 
-// 10 min
+// 7 min
 console.groupCollapsed('3. Sukurkite funkciją, kuri grąžina <true>, jeigu žodyje yra 2 parametru perduoda raidė, priešingu atveju false');
 {
   const containsLetter = (str: string, letter: string): boolean => str.includes(letter);
@@ -88,7 +88,7 @@ console.groupCollapsed('3. Sukurkite funkciją, kuri grąžina <true>, jeigu žo
 }
 console.groupEnd();
 
-// 10 min
+// 5 min
 console.groupCollapsed('4. Sukurkite funkciją, kuri grąžina <true>, jeigu žodyje yra lyginis skaičius simbolių');
 {
   const isEvenNumberOfLetters = (str: string): boolean => str.length % 2 === 0;
@@ -114,7 +114,7 @@ console.groupCollapsed('5. Sukurkite funkciją, kuri grąžina balsių kiekį ž
 }
 console.groupEnd();
 
-// 15 min
+// 10min
 console.groupCollapsed('6. Sukurkite funkciją, kuri grąžina bet kokios raidės kiekį žodyje');
 {
   const countLetters = (str: string, searchLetter: string): number => {
